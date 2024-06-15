@@ -1,0 +1,131 @@
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcomeContainer {
+  min-height: 100dvh;
+  background: linear-gradient(to bottom, #ffff 50%, #f9fddd);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 8rem 0 0 8rem;
+
+  position: relative;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    padding-top: 8rem;
+    align-items: center;
+  }
+  @media screen and (max-width: 500px) {
+    padding-top: 4rem;
+  }
+}
+h1 {
+  font-size: 8vw;
+  color: #3d2200;
+  position: relative;
+  font-family: "Climate Crisis", sans-serif;
+  filter: drop-shadow(0 5px 5px #3d2200cc);
+  letter-spacing: 0.5rem;
+  margin: 0;
+  animation: slideDown 2.5s ease-in-out;
+  @media screen and (max-width: 500px) {
+    font-size: 10vw;
+  }
+}
+::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  color: #3d220079;
+  transform: translateX(-50%) scaleY(-1);
+  color: #3d2200;
+  opacity: 0.5;
+  filter: blur(2px);
+  white-space: nowrap;
+}
+
+.coffeeGrain {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.coffeeGrainLast {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grain0 {
+  background-image: url("/bean0.png");
+  top: 350px;
+  right: 0;
+  width: 25rem;
+  height: 25rem;
+  filter: drop-shadow(5px 30px 15px #3d220080);
+  animation: fadeIn 2.5s ease-in-out;
+
+  @media screen and (max-width: 480px) {
+    top: 200px;
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.grain1 {
+  background-image: url("/bean1.png");
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  animation: fadeIn 2.5s ease-in-out;
+
+  @media screen and (max-width: 480px) {
+    bottom: 0;
+    left: 0;
+    max-width: 480px;
+    width: 100%;
+    height: 15rem;
+    overflow-x: hidden;
+  }
+}
+
+/*
+
+Climate Crisis
+
+Fira Sans Extra Condensed
+
+crema
+#F8FDDD
+
+verde
+#AECF75
+
+marron
+#3D2200
+
+*/

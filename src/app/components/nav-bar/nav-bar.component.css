@@ -1,0 +1,72 @@
+.nav-link {
+  transition: 0.5s;
+
+  color: #3d2200;
+
+  font-weight: bold;
+
+  font-family: "fira-sans-extra-condensed", cursive;
+}
+
+.nav-link:hover {
+  transition: 0.5s;
+  border-radius: 5px;
+  transform: scale(1.2);
+  @media screen and (max-width: 990px) {
+    transform: scale(1.1);
+    margin-left: 50px;
+  }
+}
+
+.navTitle {
+  font-family: "Climate Crisis", sans-serif;
+  color: #f8fddd;
+  padding: 5px 10px;
+  letter-spacing: 0.1rem;
+  background-color: #3d2200;
+  border-radius: 0.5rem;
+}
+
+.blissSearch {
+  background-color: #f8fddd;
+  border-radius: 5px;
+  border: none;
+  padding: 0 1rem;
+  color: #3d2200;
+  font-family: "fira-sans-extra-condensed", cursive;
+}
+
+.blissSearch::placeholder {
+  color: #3d2200;
+}
+
+.blissSearch:focus {
+  outline: none;
+}
+
+.navBarToggler {
+  border-radius: 5px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.navbar-toggler[aria-expanded="true"] .navBarToggler {
+  transform: rotate(180deg);
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Color Palette
+
+crema
+#F8FDDD
+
+verde
+#AECF75
+
+marron
+#3D2200
+
+*/

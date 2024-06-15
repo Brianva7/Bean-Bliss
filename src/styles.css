@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: "fira-sans-extra-condensed", sans-serif;
+
+  font-size: 1.1rem;
+
+  background: linear-gradient(to bottom, #ffff 50%, #f9fddd);
+}
+
+/*
+
+Climate Crisis
+
+Fira Sans Extra Condensed
+
+crema
+#F8FDDD
+
+verde
+#AECF75
+
+marron
+#3D2200
+
+*/

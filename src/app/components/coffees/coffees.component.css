@@ -1,0 +1,146 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 550px;
+  position: relative;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: "Climate Crisis", sans-serif;
+  font-size: 1.6rem;
+  color: #3d2200;
+  letter-spacing: 0.5rem;
+  /* @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  } */
+}
+
+h3 {
+  font-family: "fira-sans-extra-condensed", cursive;
+  font-size: 1.4rem;
+  color: #3d2200;
+  /* @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  } */
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  margin-bottom: 3rem;
+  padding: 15px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1.5rem;
+    width: 75%;
+    border-radius: 5px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    z-index: 2;
+  }
+}
+
+.hdspan {
+  font-family: "fira-sans-extra-condensed", cursive;
+  font-size: 1rem;
+  @media screen and (max-width: 768px) {
+    font-size: 1.1rem;
+    color: #3d2200;
+    /* border-radius: 5px;
+    background-color: #f8fddd96;
+    box-shadow: #3d2200 0 0 10px; */
+  }
+}
+
+.coffeeGrain {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.coffeeGrain2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25rem;
+  z-index: -1;
+  @media screen and (max-width: 1280px) {
+    width: 20rem;
+  }
+  @media screen and (max-width: 768px) {
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    z-index: 1;
+    filter: blur(5px);
+    opacity: 50%;
+  }
+}
+
+.coffeeGrain3 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25rem;
+  z-index: -1;
+  @media screen and (max-width: 1280px) {
+    width: 20rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.filters {
+  background-color: #f8fddd;
+  height: fit-content;
+}
+
+.filter {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #f8fddd;
+  color: #3d2200;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.coffeesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/*
+
+Climate Crisis
+
+Fira Sans Extra Condensed
+
+crema
+#F8FDDD
+
+verde
+#AECF75
+
+marron
+#3D2200
+
+*/

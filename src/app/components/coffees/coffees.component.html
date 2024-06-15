@@ -1,0 +1,92 @@
+<div class="container-fluid px-0">
+  <header>
+    <div class="title">
+      <H2>For True Connoisseurs</H2>
+      <h3>Savor the Perfection of Freshly Ground Beans</h3>
+      <span class="hdspan">
+        Discover the unparalleled aroma and flavor of freshly ground beans with
+        our premium selection. Elevate your coffee experience at home with the
+        finest blends.
+      </span>
+    </div>
+    <div class="coffeeGrain">
+      <img src="/bean2.png" alt="coffe bean" class="coffeeGrain2" />
+    </div>
+    <div class="coffeeGrain">
+      <img src="/bean2.png" alt="coffe bean" class="coffeeGrain3" />
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-8 coffeesContainer">
+      @for (coffee of coffees; track coffee.id) {
+
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <img
+            src="https://picsum.photos/650/450"
+            class="card-img-top"
+            alt="https://picsum.photos/650/450"
+          />
+          <h5 class="card-title">{{ coffee.name }}</h5>
+          <p class="card-text">
+            {{ coffee.price }}
+          </p>
+          <a href="#" class="btn btn-primary">Details</a>
+        </div>
+      </div>
+      }
+    </div>
+    <!-- <div class="filters col-4">
+      <div class="filter">
+        <label for="brand" class="m-2">brand: </label>
+        <select
+          class="m-2 px-3"
+          id="brand"
+          [(ngModel)]="filters.brand"
+          (change)="applyFilters()"
+        >
+          <option value="">All</option>
+          <option *ngFor="let brand of brands" [value]="brand">
+            {{ brand }}
+          </option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="variety" class="m-2">variety: </label>
+        <select
+          class="m-2 px-1"
+          id="variety"
+          [(ngModel)]="filters.variety"
+          (change)="applyFilters()"
+        >
+          <option value="">All</option>
+          <option *ngFor="let variety of varieties" [value]="variety">
+            {{ variety }}
+          </option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="minPrice" class="m-2">Minmum price: </label>
+        <input
+          class="m-2 px-1"
+          type="number"
+          id="minPrice"
+          [(ngModel)]="filters.minPrice"
+          (input)="applyFilters()"
+          placeholder="0"
+        />
+      </div>
+      <div class="filter">
+        <label for="maxPrice" class="m-2">Maximum price: </label>
+        <input
+          class="m-2 px-1"
+          type="number"
+          id="maxPrice"
+          [(ngModel)]="filters.maxPrice"
+          (input)="applyFilters()"
+          placeholder="1000"
+        />
+      </div>
+    </div> -->
+  </div>
+</div>

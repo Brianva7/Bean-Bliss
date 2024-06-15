@@ -1,0 +1,87 @@
+<div class="contaier">
+  @if (coffee) {
+  <div class="col-12 d-flex">
+    <div class="card col-5 my-5 mx-auto">
+      <div class="card-body">
+        <span class="cardTitle">Name: {{ coffee.name }} </span>
+        <p class="card-text">Description: {{ coffee.description }}</p>
+        <p class="card-text">Price: {{ coffee.price }}</p>
+        <p class="card-text">Image: {{ coffee.image }}</p>
+        <p class="card-text">Stock: {{ coffee.stock }}</p>
+        <p class="card-text">Category: {{ coffee.category }}</p>
+        <p class="card-text">Created At: {{ coffee.createdAt }}</p>
+        <p class="card-text">Updated At: {{ coffee.updatedAt }}</p>
+      </div>
+    </div>
+
+    <div class="carouselContainer col-5 my-5 mx-auto rounded">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/650/450"
+              class="d-block"
+              alt="cat"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/651/450"
+              class="d-block"
+              alt="cat"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/652/450"
+              class="d-block"
+              alt="cat"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/653/450"
+              class="d-block"
+              alt="cat"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/654/450"
+              class="d-block"
+              alt="cat"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/655/450"
+              class="d-block"
+              alt="cat"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  } @else {
+  <H2>Article Not Found</H2>
+  }
+</div>
