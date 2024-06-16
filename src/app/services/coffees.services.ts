@@ -7,7 +7,7 @@ import { Coffee } from '../models/coffee';
   providedIn: 'root',
 })
 export class CoffeesService {
-  private apiUrl = 'https://6664b568932baf9032abe091.mockapi.io/api/coffees';
+  private apiUrl = 'https://api.sampleapis.com/coffee/hot';
   constructor(private http: HttpClient) {}
 
   getCoffees(): Observable<Coffee[]> {

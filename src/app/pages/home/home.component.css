@@ -20,7 +20,6 @@
 
 .welcomeContainer {
   min-height: 100dvh;
-  background: linear-gradient(to bottom, #ffff 50%, #f9fddd);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -87,7 +86,7 @@ h1 {
   width: 25rem;
   height: 25rem;
   filter: drop-shadow(5px 30px 15px #3d220080);
-  animation: fadeIn 2.5s ease-in-out;
+  animation: fadeIn 5s ease-in-out;
 
   @media screen and (max-width: 480px) {
     top: 200px;

@@ -31,7 +31,6 @@ export class CoffeesComponent implements OnInit {
   loadCoffees(): void {
     this.coffeesService.getCoffees().subscribe((data) => {
       this.coffees = data;
-      this.extractFilters();
     });
   }
 
@@ -39,18 +38,5 @@ export class CoffeesComponent implements OnInit {
     this.coffeesService.getFilteredCoffees(this.filters).subscribe((data) => {
       this.coffees = data;
     });
-  }
-
-  extractFilters(): void {
-    const brands = new Set<string>();
-    const varieties = new Set<string>();
-
-    this.coffees.forEach((coffee) => {
-      brands.add(coffee.brand);
-      varieties.add(coffee.variety);
-    });
-
-    this.brands = Array.from(brands);
-    this.varieties = Array.from(varieties);
   }
 }

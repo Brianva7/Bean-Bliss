@@ -1,16 +1,16 @@
-<div class="contaier">
+<div class="container my-5">
   @if (coffee) {
   <div class="col-12 d-flex">
     <div class="card col-5 my-5 mx-auto">
       <div class="card-body">
-        <span class="cardTitle">Name: {{ coffee.name }} </span>
-        <p class="card-text">Description: {{ coffee.description }}</p>
-        <p class="card-text">Price: {{ coffee.price }}</p>
-        <p class="card-text">Image: {{ coffee.image }}</p>
-        <p class="card-text">Stock: {{ coffee.stock }}</p>
-        <p class="card-text">Category: {{ coffee.category }}</p>
-        <p class="card-text">Created At: {{ coffee.createdAt }}</p>
-        <p class="card-text">Updated At: {{ coffee.updatedAt }}</p>
+        <p><span class="cardTitle">Name:</span> {{ coffee.title }}</p>
+        <p>
+          <span class="cardTitle">Ingredients:</span> {{ coffee.ingredients }}
+        </p>
+        <p class="card-text">
+          <span class="cardTitle">Description:</span>
+          {{ coffee.description }}
+        </p>
       </div>
     </div>
 

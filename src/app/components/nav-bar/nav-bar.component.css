@@ -27,10 +27,16 @@
   border-radius: 0.5rem;
 }
 
+.searchForm {
+  @media screen and (max-width: 990px) {
+    width: 100%;
+  }
+}
+
 .blissSearch {
   border-radius: 5px;
   border: none;
-  padding: 0 1rem;
+  padding: 5px;
   color: #3d2200;
   font-family: "fira-sans-extra-condensed", cursive;
 }
@@ -45,6 +51,9 @@
 }
 
 .navBarToggler {
+  width: 20px;
+  height: 20px;
+  color: #3d2200;
   border-radius: 5px;
   transition: transform 0.1s ease-in-out;
 }
