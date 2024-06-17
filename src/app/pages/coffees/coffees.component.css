@@ -108,6 +108,7 @@ h3 {
   width: 100%;
   gap: 50px;
   padding: 15px;
+  margin-bottom: 150px;
 }
 
 .card-body:hover {

@@ -1,10 +1,6 @@
 .nav-link {
   transition: 0.5s;
-
   color: #3d2200;
-
-  font-weight: bold;
-
   font-family: "fira-sans-extra-condensed", cursive;
 }
 
@@ -21,10 +17,9 @@
 .navTitle {
   font-family: "Climate Crisis", sans-serif;
   color: #f8fddd;
-  padding: 5px 10px;
-  letter-spacing: 0.1rem;
+  padding: 5px 0 5px 7px;
+  letter-spacing: 0.5rem;
   background-color: #3d2200;
-  border-radius: 0.5rem;
 }
 
 .searchForm {
