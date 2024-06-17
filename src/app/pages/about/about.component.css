@@ -1,24 +1,35 @@
 h2 {
-  font-family: "Climate Crisis", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #3d2200;
   letter-spacing: 0.5rem;
   text-align: center;
+  font-weight: bold;
   width: 50%;
   margin: 0 auto 50px auto;
   @media screen and (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    width: 90%;
   }
 }
 
-.container {
+p {
+  width: 50%;
+  margin: 0 auto 50px auto;
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
+}
+
+.container-fluid {
   font-family: "fira-sans-extra-condensed", cursive;
-  margin: 15px auto 50px auto;
+  margin: 0 auto 50px auto;
 }
 
 .about {
-  padding: 150px;
+  width: 100%;
+  padding: 15px;
 }
+
 .pSpan {
   color: #3d2200;
   font-weight: bold;
