@@ -14,8 +14,8 @@ export class CoffeeComponent implements OnInit {
   coffee: Coffee | null = null;
 
   constructor(
-    private route: ActivatedRoute,
-    private coffeesService: CoffeesService
+    private coffeesService: CoffeesService,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {

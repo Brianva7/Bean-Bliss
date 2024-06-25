@@ -24,13 +24,15 @@
     @for (coffee of coffees; track coffee.id) {
 
     <div class="card">
-      <div class="card-body my-5" style="border-radius: 5px">
+      <div class="card-body my-5">
         <img src="{{ coffee.image }}" class="cardImg" alt="coffee image" />
-        <h3 class="card-title">{{ coffee.title }}</h3>
-        <p>
+        <h3 class="card-title my-3">{{ coffee.title }}</h3>
+        <p class="my-3">
           <span class="cardTitle">ingredients:</span> {{ coffee.ingredients }}
         </p>
-        <a href="/coffees/{{ coffee.id }}" class="btn detailsBtn">Details</a>
+        <a href="/coffees/{{ coffee.id }}" class="btn detailsBtn my-3"
+          >Details</a
+        >
       </div>
     </div>
     }
