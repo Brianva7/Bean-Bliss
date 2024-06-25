@@ -1,17 +1,35 @@
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .nav-link {
   transition: 0.5s;
-
   color: #3d2200;
-
-  font-weight: bold;
-
   font-family: "fira-sans-extra-condensed", cursive;
+  @media screen and (max-width: 980px) {
+    text-align: center;
+  }
 }
 
 .nav-link:hover {
   transition: 0.5s;
   border-radius: 5px;
-  transform: scale(1.2);
+  transform: scale(1.1);
   @media screen and (max-width: 990px) {
     transform: scale(1.1);
     margin-left: 50px;
@@ -21,16 +39,27 @@
 .navTitle {
   font-family: "Climate Crisis", sans-serif;
   color: #f8fddd;
-  padding: 5px 10px;
-  letter-spacing: 0.1rem;
+  padding: 5px 0 5px 7px;
+  letter-spacing: 0.5rem;
   background-color: #3d2200;
-  border-radius: 0.5rem;
+}
+
+.navbar-brand {
+  @media screen and (max-width: 990px) {
+    display: none;
+  }
+}
+
+.searchForm {
+  @media screen and (max-width: 990px) {
+    width: 100%;
+  }
 }
 
 .blissSearch {
   border-radius: 5px;
   border: none;
-  padding: 0 1rem;
+  padding: 5px;
   color: #3d2200;
   font-family: "fira-sans-extra-condensed", cursive;
 }
@@ -44,13 +73,22 @@
   background-color: #f8fddd;
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .navBarToggler {
-  border-radius: 5px;
-  transition: transform 0.1s ease-in-out;
+  width: 30px;
+  height: 32px;
+  color: #3d2200;
+  margin-top: 5px;
+  animation: bounce 3s ease-in-out infinite both;
 }
 
 .navbar-toggler[aria-expanded="true"] .navBarToggler {
-  transform: rotate(180deg);
+  transform: rotateY(180deg);
 }
 
 .navbar-toggler:focus {

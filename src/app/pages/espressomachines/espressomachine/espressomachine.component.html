@@ -1,0 +1,101 @@
+<div class="container mb-5 detailContainer">
+  @if (espressoMachine) {
+  <div class="card my-5 mx-auto">
+    <div class="card-body">
+      <p><span class="cardItem">Name:</span> {{ espressoMachine.title }}</p>
+      <p class="card-text">
+        <span class="cardItem">Description:</span>
+        {{ espressoMachine.longDescription }}
+      </p>
+      <p class="card-text">
+        <span class="cardItem">Technical especifications: </span>
+      </p>
+
+      <ul>
+        @for (tspec of espressoMachine.technicalSpecifications ; track tspec) {
+        <li>{{ tspec }}</li>
+        }
+      </ul>
+
+      <p class="card-text">
+        <span class="cardItem">Available colors: </span>
+      </p>
+
+      <ul>
+        @for (color of espressoMachine.availableColors ; track color) {
+        <li>{{ color }}</li>
+        }
+      </ul>
+      <p>
+        <span class="cardItem">Dimensions:</span>
+        {{ espressoMachine.dimensions }}
+      </p>
+
+      <p><span class="cardItem">Weight:</span> {{ espressoMachine.weight }}</p>
+
+      <p><span class="cardItem">Power:</span> {{ espressoMachine.power }}</p>
+
+      <p>
+        <span class="cardItem">Water tank capacity:</span>
+        {{ espressoMachine.waterTankCapacity }}
+      </p>
+
+      <p>
+        <span class="cardItem">Bean hopper capacity:</span>
+        {{ espressoMachine.beanHopperCapacity }}
+      </p>
+
+      <p>
+        <span class="cardItem">Warranty:</span> {{ espressoMachine.warranty }}
+      </p>
+
+      <p><span class="cardItem">Rating:</span> {{ espressoMachine.rating }}</p>
+    </div>
+  </div>
+
+  <div class="carouselContainer my-5 mx-auto">
+    <div id="carouselDetails" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/espressomachine.png" class="carouselDetails" alt="cat" />
+        </div>
+        <div class="carousel-item">
+          <img src="/espressomachine.png" class="carouselDetails" alt="cat" />
+        </div>
+        <div class="carousel-item">
+          <img src="/espressomachine.png" class="carouselDetails" alt="cat" />
+        </div>
+        <div class="carousel-item">
+          <img src="/espressomachine.png" class="carouselDetails" alt="cat" />
+        </div>
+        <div class="carousel-item">
+          <img src="/espressomachine.png" class="carouselDetails" alt="cat" />
+        </div>
+        <div class="carousel-item">
+          <img src="/espressomachine.png" class="carouselDetails" alt="cat" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselDetails"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDetails"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  } @else {
+  <H2>Article Not Found</H2>
+  }
+</div>

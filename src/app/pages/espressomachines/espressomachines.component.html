@@ -1,0 +1,53 @@
+<div class="container-fluid px-0">
+  <header>
+    <div class="title">
+      <h2>For True Baristas</h2>
+      <h3>Experience Excellence in Every Cup</h3>
+      <span class="hdspan">
+        Discover the art of perfect brewing with our premium espresso machines.
+        Bring the high-quality coffee experience to your home with our
+        innovative and elegant solutions.
+      </span>
+    </div>
+    <div class="espressoMachine">
+      <img
+        src="/espressomachine.png"
+        alt="espresso machine"
+        class="espressoMachine1"
+      />
+    </div>
+    <div class="espressoMachine">
+      <img
+        src="/espressomachine.png"
+        alt="espresso machine"
+        class="espressoMachine2"
+      />
+    </div>
+  </header>
+
+  <div class="subTitle my-5">
+    <h2>Our Espresso Machines</h2>
+  </div>
+
+  <div class="coffeesContainer my-5">
+    @for (espressoMachine of espressoMachines; track espressoMachine.id) {
+
+    <div class="card">
+      <div class="card-body my-5">
+        <img src="/espressomachine.png" class="cardImg" alt="coffee image" />
+        <h3 class="card-title my-3">{{ espressoMachine.title }}</h3>
+        <p class="my-3">
+          <span class="cardTitle my-3">Description:</span>
+          {{ espressoMachine.shortDescription }}
+        </p>
+        <a
+          class="btn detailsBtn my-3"
+          href="/espressomachines/{{ espressoMachine.id }}"
+        >
+          Details
+        </a>
+      </div>
+    </div>
+    }
+  </div>
+</div>

@@ -1,12 +1,12 @@
 footer {
   background-color: #3d2200;
-  color: #f8fddd;
+  color: white;
   font-family: "fira-sans-extra-condensed", cursive;
 }
 
 a {
   text-decoration: none;
-  color: #f8fddd;
+  color: white;
 }
 
 /*

@@ -8,18 +8,17 @@ import { CommonModule } from '@angular/common';
   selector: 'app-coffees',
   templateUrl: './coffees.component.html',
   styleUrls: ['./coffees.component.css'],
-  standalone: true, // Importante para Angular 18
+  standalone: true,
   imports: [FormsModule, CommonModule],
 })
 export class CoffeesComponent implements OnInit {
   coffees: Coffee[] = [];
-  brands: string[] = [];
-  varieties: string[] = [];
   filters = {
-    brand: '',
-    variety: '',
-    minPrice: null,
-    maxPrice: null,
+    sort: '',
+    search: '',
+    color: '',
+    minPrice: '',
+    maxPrice: '',
   };
 
   constructor(private coffeesService: CoffeesService) {}
@@ -31,7 +30,6 @@ export class CoffeesComponent implements OnInit {
   loadCoffees(): void {
     this.coffeesService.getCoffees().subscribe((data) => {
       this.coffees = data;
-      this.extractFilters();
     });
   }
 
@@ -39,18 +37,5 @@ export class CoffeesComponent implements OnInit {
     this.coffeesService.getFilteredCoffees(this.filters).subscribe((data) => {
       this.coffees = data;
     });
-  }
-
-  extractFilters(): void {
-    const brands = new Set<string>();
-    const varieties = new Set<string>();
-
-    this.coffees.forEach((coffee) => {
-      brands.add(coffee.brand);
-      varieties.add(coffee.variety);
-    });
-
-    this.brands = Array.from(brands);
-    this.varieties = Array.from(varieties);
   }
 }

@@ -1,9 +1,6 @@
 <div class="container-fluid px-0">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/"
-        ><span class="navTitle">Bean Bliss</span></a
-      >
       <button
         class="navbar-toggler"
         type="button"
@@ -12,35 +9,34 @@
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        style="border: none; padding: 0"
+        style="
+          border: none;
+          font-family: 'fira-sans-extra-condensed', cursive;
+          margin: 0 auto;
+        "
       >
-        <span>
-          <img src="/iconDropdown.png" alt="drop down" class="navBarToggler" />
+        <span class="navBarToggler">
+          <img src="/chevron-down.svg" alt="drop down" class="navBarToggler" />
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link px-3 py-2" aria-current="page" href="/coffees"
-              >Coffe</a
-            >
+            <a class="nav-link px-3 py-2" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3 py-2" href="/articles">Espresso</a>
+            <a class="nav-link px-3 py-2" href="/coffees">Coffe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2" href="/espressomachines">Espresso</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-3 py-2" href="/about">About</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link px-3 py-2" href="/contact">Contact</a>
+          </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="blissSearch me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="nav-link px-3 py-2" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
